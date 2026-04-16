@@ -1,10 +1,10 @@
-# 🍗 Pollería D' Elí - API Backend (Laravel)
+# Pollería D' Elí - API Backend (Laravel)
 
 Este es el sistema centralizado de datos para la Pollería D' Elí, desarrollado con **Laravel 11**. Se encarga de la gestión de usuarios, productos, ventas, mesas y la generación de reportes gerenciales.
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 - **Framework:** Laravel 11.x
 - **Lenguaje:** PHP 8.2+
 - **Base de Datos:** MySQL (MariaDB)
@@ -13,10 +13,10 @@ Este es el sistema centralizado de datos para la Pollería D' Elí, desarrollado
 
 ---
 
-## 🚀 Configuración e Instalación
+## Configuración e Instalación
 
 ### 1. Requisitos Previos
-- XAMPP o servidor local con PHP 8.2 y MySQL.
+- XAMPP con PHP 8.2 y MySQL.
 - Composer instalado.
 
 ### 2. Clonación y Dependencias
@@ -48,7 +48,7 @@ php artisan serve
 
 ---
 
-## 📊 Funcionalidades Clave
+## Funcionalidades Clave
 - **Gestión de Usuarios:** CRUD completo para Administradores y Empleados (Mozos/Caja).
 - **Control de Salón:** Gestión de mesas en tiempo real (Disponible/Ocupada).
 - **Sistema de Reservas:** Registro y validación de disponibilidad horaria.
@@ -57,7 +57,7 @@ php artisan serve
 
 ---
 
-## 📁 Estructura Principal
+## Estructura Principal
 - `app/Http/Controllers/`: Lógica de negocio (Reportes, Ventas, Reservas).
 - `app/Models/`: Modelos de datos (Usuario, Producto, Mesa).
 - `routes/api.php`: Endpoints disponibles para el frontend.
