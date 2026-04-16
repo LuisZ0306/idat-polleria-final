@@ -1,0 +1,116 @@
+/* -- App.css: Estilos Dinámicos & Interactivos -- */
+
+/* Botón Principal (Llamativo) */
+.btn-brasa {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: var(--transition);
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(13, 110, 253, 0.3);
+}
+
+.btn-brasa:hover {
+  background-color: #0a58ca;
+  transform: translateY(-3px); /* Efecto de elevación */
+  box-shadow: 0 6px 15px rgba(13, 110, 253, 0.4);
+  color: white;
+}
+
+/* Card del Menú (Efecto Elevado) */
+.card-comida {
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+}
+
+.card-comida:hover {
+  transform: scale(1.03); /* Se agranda un poco */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card-comida img {
+  height: 200px;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.card-comida:hover img {
+  transform: scale(1.1); /* Zoom suave en la imagen al pasar el mouse */
+}
+
+/* Navbar Personalizado (Elegante) */
+.navbar-polleria {
+  background-color: var(--bs-body-bg); /* Sigue el fondo del tema */
+  padding: 15px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+[data-bs-theme="dark"] .navbar-polleria {
+  background-color: var(--bs-body-bg);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.nav-link-polleria {
+  color: var(--bs-body-color) !important; /* Texto dinámico */
+  font-weight: 500;
+  margin: 0 10px;
+  position: relative;
+  transition: var(--transition);
+}
+
+.nav-link-polleria:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--secondary-color);
+  transition: var(--transition);
+}
+
+.nav-link-polleria:hover:after {
+  width: 100%;
+}
+
+.nav-link-polleria:hover {
+  color: var(--secondary-color) !important;
+}
+
+/* Títulos de sección con una línea decorativa debajo */
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+}
+
+/* Footer con un toque cálido */
+footer {
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+  padding: 50px 0 20px;
+}

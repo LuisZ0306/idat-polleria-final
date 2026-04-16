@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@500;700&display=swap');
+
+:root {
+  /* Paleta de Colores: Pollería Moderna (Tema Azul) */
+  --primary-color: #0d6efd;      /* Azul Principal (Confianza, Modernidad) */
+  --secondary-color: #FFC107;    /* Amarillo Oro (Detalles, Brillo) */
+  --dark-bg: #1A1A1A;           /* Negro Carbón */
+  --light-bg: #FFF9F0;          /* Crema Suave */
+  --text-main: #2D2D2D;         /* Texto Principal */
+  --text-light: #FFFFFF;        /* Texto en fondos oscuros */
+  --shadow: 0 4px 15px rgba(0,0,0,0.1);
+  --transition: all 0.3s ease;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--bs-body-bg); /* Cambia automáticamente con el tema */
+  color: var(--bs-body-color);         /* Cambia automáticamente con el tema */
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+h1, h2, h3, h4, .navbar-brand {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Scrollbar personalizado para que combine */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bs-body-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+
+/* --- Efectos Visuales --- */
+.hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.15) !important;
+}
